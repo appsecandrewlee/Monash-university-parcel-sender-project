@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <style>
+        table,th,td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    </br>
+        <table>
+            <tr>
+                <th>Sender</th>
+                <th>Address</th>
+                <th>Weight</th>
+                <th>Isfragile</th>
+            </tr>
+            <% for(let i=0; i < db.length; i++) { %>
+                <tr>
+                    <td>
+                        <%= db[i].sender %>
+                    </td>
+                    <td>
+                        <%= db[i].address %>
+                    </td>
+                    <td>
+                        <%= db[i].weight %>
+                    </td>
+                    <td>
+                        <%= db[i].fragile %>
+                    </td>
+                </tr>
+                <% }%>
+
+     </table>
+</body>
+
+</html>
